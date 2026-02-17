@@ -62,3 +62,46 @@ for(let i=1;i<=20;i++)
         console.log(i);
     }
 }
+//------------Arrys----------
+let marrks=[97,78,95,58,59];
+console.log(marrks);
+//---------print all element of array
+let arr =[10,20,30,40,50];
+for(let i=0;i<arr.length;i++){
+    console.log(arr[i]);
+}
+//--------sum of eelment-----------
+let sum=0;
+for(let i=0;i<arr.length;i++){
+    sum +=arr[i];
+}
+console.log("sum=",sum);
+//----------largest no of array-----
+let a1 =[45,67,89,23,56];
+let largest=a1[0];
+for(let i=1;i<arr.length;i++){
+    if(a1[i]>largest){
+        largest=a1[i];
+    }
+}
+console.log("Largest number=",largest);
+//---------Reverse array-------
+let reverse=[]
+for(let i=arr.length-1;i>=0;i--){
+    reverse.push(arr[i]);
+}
+console.log("Reversed array=",reverse);
+//-----------odd ,even no array---------
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+        console.log(arr[i] + " is Even");
+    } else {
+        console.log(arr[i] + " is Odd");
+    }
+}
+//---------------------------------------
+function showMessage() {
+    alert("Keep Learning React & Node 🚀 You are doing great!");
+}
+
+
